@@ -1,7 +1,7 @@
-#include 'reg_ds_grad.lp'.
-#include 'reg_ds_req.lp'.
-#include 'reg_ds_req2.lp'.
-#include 'reg_ds_sugg.lp'.
+#include 'reg_is_grad.lp'.
+#include 'reg_is_req.lp'.
+#include 'reg_is_req2.lp'.
+#include 'reg_is_sugg.lp'.
 
 
 canGraduate(Student):-
