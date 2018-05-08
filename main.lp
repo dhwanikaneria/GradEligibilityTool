@@ -1,14 +1,22 @@
+student(dhwani,ds).
+_specialization(dhwani,ds).
 
-student(dhwani,cs).
-_hasTaken(dhwani,math2451).
-_hasTaken(dhwani,math3311).
-_hasTaken(dhwani,math3323).
-_hasTaken(dhwani,ecs1200).
+_hasTaken(dhwani,cs6313).
+_hasTaken(dhwani,cs6350).
+_hasTaken(dhwani,cs6363).
+_hasTaken(dhwani,cs6375).
 
+%_hasTaken(dhwani,cs6332).
+_hasTaken(dhwani,cs6320).
+_hasTaken(dhwani,cs6327).
+%_hasTaken(dhwani,cs6347).
+_hasTaken(dhwani,cs6360).
+_hasTaken(dhwani,cs5303).
+_hasTaken(dhwani,cs5333).
 
-_taken(dhwani,[chem1311,chem1111,math2417,hist1301,hist1302,math2419,ahst2331,math3310,cs4V98,math2451,math3311,math3323]).
+_taken(dhwani,[cs6313,cs6350,cs6363,cs6375,cs6320,cs6327,cs6360,cs5303,cs5333]).
 
-#include 'counting.lp'.
-#include 'reg_is_rules.lp'.
+#include '/Users/hardik/Desktop/GIT-WORKSPACE/GradEligibilityTool/counting.lp'.
+#include '/Users/hardik/Desktop/GIT-WORKSPACE/GradEligibilityTool/ms/regular/ds/regular_ds_rules.lp'.
 
-?-_main(dhwani).
+?- _main(dhwani).

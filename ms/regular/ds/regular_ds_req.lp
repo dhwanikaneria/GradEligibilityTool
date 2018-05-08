@@ -10,3 +10,5 @@ _req(cs6320,elective).
 _req(cs6327,elective).
 _req(cs6347,elective).
 _req(cs6360,elective).
+
+%_req(Course,required):- _hasTaken(_,Course),_req(Course,elective).
