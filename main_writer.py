@@ -46,7 +46,8 @@ def main():
         print(str(err), file=sys.stderr)
         sys.exit(1)
 
-    with open('main.lp', 'w') as main_file:
+    factfile = 'main_' + transcript.name +'.lp'
+    with open(factfile, 'w') as main_file:
         main_file.write(main_contents)
 
 if __name__ == '__main__':
