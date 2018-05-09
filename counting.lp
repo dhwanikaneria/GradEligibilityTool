@@ -21,7 +21,8 @@ _meetsHours(Student, Req, N):-
 _auditHours(Student, Req, N):-
 %write(N),
     _taken(Student, CourseList),
-    _auditHours(Student, Req, CourseList,N).     
+    _auditHours(Student, Req, CourseList,N).    
+
 _auditHours(Student, Req, N):-
     _countHours(Student, Sum, Req),
     %write(Req),write(Sum),write(' '),
@@ -33,12 +34,13 @@ needsHours(Student, Req, Diff).
 
 _auditHours(Student, Req, List, Min):-
     Min =< 0.           
+
 _auditHours(Student, Req, [Course|Tail], Min):-
     _req(Course, Req),
     _course(Course, H),
-    %_takenFor(Student, Course, Req),
     Min_sub is Min - H,
     _auditHours(Student, Req, Tail, Min_sub).            
+
 _auditHours(Student, Req, [Course|Tail], Min):-
     _auditHours(Student, Req, Tail, Min).
 
